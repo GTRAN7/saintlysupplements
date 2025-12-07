@@ -1,0 +1,86 @@
+.home-page {
+  overflow: hidden;
+}
+
+/* Mission Statement Section */
+.mission-statement {
+  background: linear-gradient(135deg, var(--dark-navy) 0%, var(--cobalt-blue) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-statement::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.mission-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.mission-icon {
+  width: 80px;
+  height: 60px;
+  margin: 0 auto var(--space-md);
+  color: var(--turquoise);
+}
+
+.mission-content h2 {
+  color: white;
+  margin-bottom: var(--space-md);
+  font-size: var(--text-3xl);
+}
+
+.mission-text {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--space-lg);
+}
+
+.mission-text strong {
+  color: var(--turquoise);
+}
+
+.mission-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.mission-actions .btn-outline {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.mission-actions .btn-outline:hover {
+  background: white;
+  color: var(--dark-navy);
+  border-color: white;
+}
+
+@media (max-width: 600px) {
+  .mission-text {
+    font-size: var(--text-base);
+  }
+
+  .mission-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
