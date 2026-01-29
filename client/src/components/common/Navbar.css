@@ -37,8 +37,16 @@
 .logo-icon {
   width: 48px;
   height: 32px;
+  display: flex;
+  align-items: center;
   color: var(--turquoise);
   transition: transform var(--transition-base);
+}
+
+.logo-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .navbar-logo:hover .logo-icon {

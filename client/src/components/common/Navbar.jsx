@@ -34,21 +34,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <div className="logo-icon">
-            <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Wings */}
-              <path 
-                d="M30 12C25 8 18 6 10 8C14 12 16 18 16 24C18 20 22 16 30 12Z" 
-                fill="currentColor" 
-                opacity="0.9"
-              />
-              <path 
-                d="M30 12C35 8 42 6 50 8C46 12 44 18 44 24C42 20 38 16 30 12Z" 
-                fill="currentColor" 
-                opacity="0.9"
-              />
-              {/* Halo */}
-              <ellipse cx="30" cy="6" rx="8" ry="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-            </svg>
+            <img src="/icon.png" alt="Saintly Supplements" />
           </div>
           <div className="logo-text">
             <span className="logo-name">SAINTLY</span>
