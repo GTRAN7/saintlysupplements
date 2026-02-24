@@ -1,0 +1,364 @@
+/* ── Veteran Program Page ── */
+
+/* Hero Actions */
+.veteran-program-page .page-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
+}
+
+/* ── Eligibility Grid ── */
+.eligibility-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.eligibility-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.eligibility-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.elig-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--powder-blue), var(--turquoise));
+  border-radius: var(--radius-md);
+}
+
+.elig-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--dark-navy);
+}
+
+.eligibility-card h3 {
+  font-family: var(--font-accent);
+  font-size: var(--text-xl);
+  color: var(--dark-navy);
+  margin: 0;
+}
+
+.elig-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.elig-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.elig-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  background: var(--teal);
+  border-radius: 50%;
+  margin-top: 1px;
+}
+
+.elig-check svg {
+  width: 12px;
+  height: 12px;
+  color: white;
+}
+
+/* ── Process Steps ── */
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.step-item {
+  position: relative;
+  text-align: center;
+  padding: 0 var(--space-sm);
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-sm);
+  background: linear-gradient(135deg, var(--cobalt-blue), var(--turquoise));
+  color: white;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+/* Connecting line between steps */
+.step-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 28px; /* center of step-number */
+  left: calc(50% + 28px);
+  width: calc(100% - 56px);
+  height: 2px;
+  background: linear-gradient(90deg, var(--turquoise), var(--powder-blue));
+  z-index: 0;
+}
+
+.step-item h4 {
+  font-family: var(--font-accent);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--dark-navy);
+  margin-bottom: var(--space-xs);
+}
+
+.step-item p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Supplement Cards ── */
+.supplements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.supplement-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.supplement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.supplement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-sm);
+  background: linear-gradient(135deg, var(--powder-blue), var(--turquoise));
+  border-radius: var(--radius-md);
+}
+
+.supplement-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--dark-navy);
+}
+
+.supplement-card h4 {
+  font-family: var(--font-accent);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--dark-navy);
+  margin-bottom: var(--space-xs);
+}
+
+.supplement-card p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── FAQ Accordion ── */
+.faq-accordion {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.faq-item {
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(26, 39, 68, 0.1);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.faq-item[open] {
+  border-color: var(--turquoise);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: 1.25rem var(--space-md);
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-accent);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--dark-navy);
+  user-select: none;
+  transition: background var(--transition-fast);
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question:hover {
+  background: var(--warm-gray);
+}
+
+.faq-item[open] .faq-question {
+  background: rgba(64, 224, 208, 0.06);
+  color: var(--cobalt-blue);
+}
+
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--teal);
+  transition: transform var(--transition-base);
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 var(--space-md) var(--space-md);
+  border-top: 1px solid rgba(26, 39, 68, 0.06);
+}
+
+.faq-answer p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: var(--space-sm) 0 0;
+}
+
+/* ── CTA Overrides ── */
+.cta-box .page-badge {
+  display: inline-flex;
+}
+
+.cta-disclaimer {
+  margin-top: var(--space-md);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0;
+}
+
+.cta-policy-link {
+  color: var(--turquoise);
+  text-decoration: underline;
+}
+
+.cta-policy-link:hover {
+  color: white;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .supplements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  /* Hide connectors in wrapped layout */
+  .step-item::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .eligibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-row {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: var(--space-lg);
+  }
+
+  .supplements-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .faq-question {
+    font-size: var(--text-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .eligibility-card {
+    padding: var(--space-md);
+  }
+
+  .faq-question {
+    padding: 1rem;
+  }
+
+  .faq-answer {
+    padding: 0 1rem 1rem;
+  }
+}

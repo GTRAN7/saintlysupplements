@@ -12,6 +12,8 @@ import Shop from './pages/Shop';
 import Donate from './pages/Donate';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import VeteranProgram from './pages/VeteranProgram';
+import VeteranPolicy from './pages/VeteranPolicy';
 import './styles/global.css';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
           <Route path="/contact" element={<GetInvolved />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/veterans" element={<VeteranProgram />} />
+          <Route path="/veteran-policy" element={<VeteranPolicy />} />
         </Routes>
         <Footer />
       </div>
