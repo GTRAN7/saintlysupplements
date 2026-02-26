@@ -7,28 +7,28 @@ const Supplements = () => {
       name: 'Vitamin D3',
       description: 'Essential for bone health, immune function, and mood regulation.',
       benefits: ['Bone strength', 'Immune support', 'Mood balance'],
-      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80',
+      image: '/products/vitamin-d3.JPG',
     },
     {
       id: 2,
-      name: 'Vitamin K2',
-      description: 'Works synergistically with D3 for optimal calcium absorption.',
-      benefits: ['Heart health', 'Bone density', 'Arterial health'],
-      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80',
+      name: 'Multivitamin',
+      description: 'A comprehensive blend of essential vitamins and minerals for daily health.',
+      benefits: ['Overall wellness', 'Immune support', 'Energy levels'],
+      image: '/products/multivitamin.JPG',
     },
     {
       id: 3,
       name: 'Fish Oil (Omega-3)',
       description: 'High-quality omega-3 fatty acids for brain and heart health.',
       benefits: ['Brain function', 'Inflammation', 'Joint health'],
-      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80',
+      image: '/products/omega3.JPG',
     },
     {
       id: 4,
       name: 'Condition-Specific Blends',
       description: 'Targeted formulas designed for specific health conditions.',
       benefits: ['Customized care', 'Targeted support', 'Quality assured'],
-      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80',
+      image: '/products/multivitamin.JPG',
     },
   ];
 
@@ -55,9 +55,6 @@ const Supplements = () => {
             >
               <div className="supplement-image">
                 <img src={supplement.image} alt={supplement.name} />
-                <div className="supplement-overlay">
-                  <span className="supplement-badge">Free</span>
-                </div>
               </div>
               
               <div className="supplement-content">
@@ -84,7 +81,7 @@ const Supplements = () => {
             <h3>Need supplements but can't afford them?</h3>
             <p>We're here to help. Apply for assistance today.</p>
           </div>
-          <a href="/get-involved" className="btn btn-primary">
+          <a href="/veterans" className="btn btn-primary">
             Apply for Help
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>

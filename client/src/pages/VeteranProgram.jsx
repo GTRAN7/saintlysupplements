@@ -168,7 +168,7 @@ const VeteranProgram = () => {
               Just support for the people who gave so much.
             </p>
             <div className="hero-actions">
-              <a href="https://docs.google.com/forms/d/1VFj7OtShNwKQnuXZmOZJdCAQMwtwcGSjjgwPPf8HEdE/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Apply Now — It's Free</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA4drcrPDbFi9Oc3zKoiuPltIPmwc7Yjm5thXJQ9VGvpGWwg/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Apply Now (It's Free)</a>
               <a href="#how-it-works" className="btn btn-outline-light">See How It Works</a>
             </div>
           </div>
@@ -289,7 +289,7 @@ const VeteranProgram = () => {
         <div className="container">
           <div className="section-header">
             <h2>How It Works</h2>
-            <p>Four simple steps from application to delivery — we make it easy.</p>
+            <p>Four simple steps from application to delivery.</p>
           </div>
           <div className="steps-row">
             {steps.map((step, index) => (
@@ -367,13 +367,13 @@ const VeteranProgram = () => {
               and no strings attached — just our commitment to supporting veterans in need.
             </p>
             <div className="cta-buttons">
-              <a href="https://docs.google.com/forms/d/1VFj7OtShNwKQnuXZmOZJdCAQMwtwcGSjjgwPPf8HEdE/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA4drcrPDbFi9Oc3zKoiuPltIPmwc7Yjm5thXJQ9VGvpGWwg/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: 20, height: 20 }}>
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                   <polyline points="15 3 21 3 21 9"/>
                   <line x1="10" y1="14" x2="21" y2="3"/>
                 </svg>
-                Apply Now — It's Free
+                Apply Now (It's Free)
               </a>
               <Link to="/veteran-policy" className="btn btn-outline-light">
                 View Privacy Policy

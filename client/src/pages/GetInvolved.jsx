@@ -17,11 +17,19 @@ const GetInvolved = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Thank you for your interest! We will be in touch soon.');
+    const res = await fetch('https://formspree.io/f/mlgwzozb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+    if (res.ok) {
+      alert('Thank you for your interest! We will be in touch soon.');
+      setFormData({ name: '', email: '', phone: '', interest: 'volunteer', message: '' });
+    } else {
+      alert('Something went wrong. Please try again.');
+    }
   };
 
   const opportunities = [

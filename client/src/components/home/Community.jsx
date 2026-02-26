@@ -14,7 +14,7 @@ const Community = () => {
       )
     },
     { 
-      number: '500+', 
+      number: '15+',
       label: 'Active Volunteers', 
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -59,7 +59,7 @@ const Community = () => {
             <p className="community-lead">
               We believe in the power of community, which is why we involve 
               passionate volunteers and young people who help pack, deliver, 
-              and share time with those we serve—turning kindness into action.
+              and share time with those we serve.
             </p>
 
             <div className="community-features">
@@ -114,20 +114,20 @@ const Community = () => {
           <div className="community-visual">
             <div className="community-image-stack">
               <div className="stack-image stack-image-1">
-                <img 
-                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80" 
+                <img
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
                   alt="Volunteers packing supplements"
                 />
               </div>
               <div className="stack-image stack-image-2">
-                <img 
-                  src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" 
+                <img
+                  src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80"
                   alt="Youth volunteers"
                 />
               </div>
               <div className="stack-image stack-image-3">
-                <img 
-                  src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80" 
+                <img
+                  src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80"
                   alt="Community gathering"
                 />
               </div>

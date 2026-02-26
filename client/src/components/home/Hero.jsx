@@ -31,8 +31,7 @@ const Hero = () => {
           </h1>
           
           <p className="hero-description animate-fade-in-up delay-2">
-            We exist to close the health gap by making high-quality supplements 
-            accessible for people facing chronic conditions and financial hardship.
+            We exist to close the health gap by providing high-quality supplements accessible for veterans facing chronic conditions and financial hardship.
           </p>
           
           <div className="hero-cta animate-fade-in-up delay-3">
@@ -54,7 +53,7 @@ const Hero = () => {
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-number">500+</span>
+              <span className="stat-number">15+</span>
               <span className="stat-label">Volunteers</span>
             </div>
             <div className="stat-divider"></div>

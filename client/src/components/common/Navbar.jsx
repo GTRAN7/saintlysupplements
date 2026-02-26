@@ -23,36 +23,42 @@ const Navbar = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/our-work', label: 'Our Work' },
+    { path: '/team', label: 'Our Team' },
     { path: '/blogs', label: 'Blogs' },
     { path: '/veterans', label: 'Veterans' },
     { path: '/get-involved', label: 'Get Involved' },
     { path: '/partners', label: 'Corporate Partners' },
-    { path: '/shop', label: 'Shop' },
+    { path: 'https://saintly-supplements.myshopify.com/', label: 'Shop', external: true },
   ];
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <div className="logo-icon">
-            <img src="/icon.png" alt="Saintly Supplements" />
-          </div>
-          <div className="logo-text">
-            <span className="logo-name">SAINTLY</span>
-            <span className="logo-tagline">SUPPLEMENTS</span>
-          </div>
+          <img src="/logoandtext.png" alt="Saintly Supplements" className="logo-full" />
         </Link>
 
         <div className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul className="navbar-links">
             {navLinks.map((link) => (
               <li key={link.path}>
-                <Link 
-                  to={link.path} 
-                  className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
-                >
-                  {link.label}
-                </Link>
+                {link.external ? (
+                  <a
+                    href={link.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav-link"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    to={link.path}
+                    className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
+                  >
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

@@ -27,10 +27,17 @@
 }
 
 .mission-icon {
-  width: 80px;
   height: 60px;
   margin: 0 auto var(--space-md);
-  color: var(--turquoise);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-icon img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .mission-content h2 {

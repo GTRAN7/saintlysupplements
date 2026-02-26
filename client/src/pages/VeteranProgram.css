@@ -351,7 +351,15 @@
 
 @media (max-width: 480px) {
   .eligibility-card {
-    padding: var(--space-md);
+    padding: var(--space-sm);
+  }
+
+  .steps-row {
+    max-width: 100%;
+  }
+
+  .supplements-grid {
+    max-width: 100%;
   }
 
   .faq-question {

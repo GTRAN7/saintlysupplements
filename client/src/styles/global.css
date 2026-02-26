@@ -34,16 +34,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(var(--text-4xl), 5vw, var(--text-6xl));
+  font-size: clamp(1.75rem, 5vw, var(--text-6xl));
   font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+  font-size: clamp(1.5rem, 4vw, var(--text-5xl));
 }
 
 h3 {
-  font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl));
+  font-size: clamp(1.2rem, 3vw, var(--text-3xl));
 }
 
 h4 {
@@ -89,6 +89,22 @@ ul, ol {
 /* Section Spacing */
 .section {
   padding: var(--space-2xl) 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-xl) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: var(--space-lg) 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
 }
 
 .section-header {

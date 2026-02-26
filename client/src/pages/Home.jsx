@@ -19,17 +19,7 @@ const Home = () => {
         <div className="container">
           <div className="mission-content">
             <div className="mission-icon">
-              <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path 
-                  d="M30 12C25 8 18 6 10 8C14 12 16 18 16 24C18 20 22 16 30 12Z" 
-                  fill="currentColor" 
-                />
-                <path 
-                  d="M30 12C35 8 42 6 50 8C46 12 44 18 44 24C42 20 38 16 30 12Z" 
-                  fill="currentColor" 
-                />
-                <ellipse cx="30" cy="6" rx="8" ry="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-              </svg>
+              <img src="/icon.png" alt="Saintly Supplements" />
             </div>
             
             <h2>Our Focus</h2>

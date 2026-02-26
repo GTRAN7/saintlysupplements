@@ -906,6 +906,10 @@
     padding: 120px 0 80px;
   }
 
+  .page-hero h1 {
+    font-size: clamp(1.6rem, 6vw, 2.5rem);
+  }
+
   .programs-grid,
   .opportunities-grid {
     grid-template-columns: 1fr;
@@ -935,6 +939,33 @@
   .preview-items {
     flex-direction: column;
     gap: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 100px 0 60px;
+  }
+
+  .page-hero p {
+    font-size: var(--text-base);
+  }
+
+  .page-wave svg {
+    height: 50px;
+  }
+
+  .amount-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .programs-grid,
+  .opportunities-grid {
+    max-width: 100%;
+  }
+
+  .donate-form {
+    padding: var(--space-md);
   }
 }
 

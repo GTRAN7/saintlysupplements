@@ -34,46 +34,15 @@
   z-index: 1001;
 }
 
-.logo-icon {
-  width: 48px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  color: var(--turquoise);
+.logo-full {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
   transition: transform var(--transition-base);
 }
 
-.logo-icon img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.navbar-logo:hover .logo-icon {
-  transform: scale(1.05);
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logo-name {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: white;
-}
-
-.logo-tagline {
-  font-family: var(--font-accent);
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  color: var(--turquoise);
-  text-transform: uppercase;
+.navbar-logo:hover .logo-full {
+  transform: scale(1.03);
 }
 
 /* Menu */
@@ -203,6 +172,12 @@
   .nav-link {
     padding: 0.5rem 0.75rem;
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-full {
+    height: 48px;
   }
 }
 

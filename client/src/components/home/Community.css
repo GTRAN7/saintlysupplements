@@ -172,11 +172,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-sm);
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  width: 280px;
-  z-index: 5;
+  margin-top: var(--space-md);
 }
 
 .community-stat-card {
@@ -273,19 +269,7 @@
   }
 
   .community-stats {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    width: 100%;
-    max-width: 400px;
-    margin: var(--space-lg) auto 0;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .community-stats {
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--space-lg);
   }
 }
 

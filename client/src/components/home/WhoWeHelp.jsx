@@ -54,50 +54,16 @@ const WhoWeHelp = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>No Cost Ever</h4>
-                  <p>All supplements are completely free to those in need</p>
+                  <h4>Zero Cost or Minimal Costs</h4>
+                  <p>Supplements are complimentary or heavily discounted to those veterans who fully qualify.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="who-we-help-images">
-            <div className="image-grid">
-              <div className="image-item image-1">
-                <img 
-                  src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?w=600&q=80" 
-                  alt="Senior citizen receiving help"
-                />
-              </div>
-              <div className="image-item image-2">
-                <img 
-                  src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80" 
-                  alt="Community members together"
-                />
-              </div>
-              <div className="image-item image-3">
-                <img 
-                  src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" 
-                  alt="Volunteers working together"
-                />
-              </div>
-            </div>
-            
-            {/* Stats overlay */}
-            <div className="stats-overlay">
-              <div className="stats-card">
-                <div className="stats-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <circle cx="12" cy="12" r="6"/>
-                    <circle cx="12" cy="12" r="2"/>
-                  </svg>
-                </div>
-                <div>
-                  <span className="stats-number">100%</span>
-                  <span className="stats-text">Free for Recipients</span>
-                </div>
-              </div>
+            <div className="team-photo-wrap">
+              <img src="/team/full-team.jpeg" alt="Saintly Supplements team" />
             </div>
           </div>
         </div>

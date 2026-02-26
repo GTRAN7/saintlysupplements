@@ -7,6 +7,7 @@ const Footer = () => {
   const quickLinks = [
     { path: '/', label: 'Home' },
     { path: '/our-work', label: 'Our Work' },
+    { path: '/veterans', label: 'Veterans' },
     { path: '/blogs', label: 'Blogs' },
     { path: '/get-involved', label: 'Get Involved' },
   ];
@@ -14,7 +15,7 @@ const Footer = () => {
   const supportLinks = [
     { path: '/donate', label: 'Donate' },
     { path: '/partners', label: 'Corporate Partners' },
-    { path: '/shop', label: 'Shop' },
+    { path: 'https://saintly-supplements.myshopify.com/', label: 'Shop', external: true },
     { path: '/contact', label: 'Contact Us' },
   ];
 
@@ -43,28 +44,11 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
-                <div className="footer-logo-icon">
-                  <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path 
-                      d="M30 12C25 8 18 6 10 8C14 12 16 18 16 24C18 20 22 16 30 12Z" 
-                      fill="currentColor" 
-                    />
-                    <path 
-                      d="M30 12C35 8 42 6 50 8C46 12 44 18 44 24C42 20 38 16 30 12Z" 
-                      fill="currentColor" 
-                    />
-                    <ellipse cx="30" cy="6" rx="8" ry="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  </svg>
-                </div>
-                <div className="footer-logo-text">
-                  <span>SAINTLY</span>
-                  <span>SUPPLEMENTS</span>
-                </div>
+                <img src="/logoandtext.png" alt="Saintly Supplements" className="footer-logo-img" />
               </Link>
               
               <p className="footer-mission">
-                Saintly Supplements exists to provide free, high-quality vitamins and supplements 
-                to people with chronic medical conditions who can't afford them.
+                We exist to close the health gap by providing high-quality supplements accessible for veterans facing chronic conditions and financial hardship.
               </p>
               
               <div className="footer-social">
@@ -113,7 +97,11 @@ const Footer = () => {
               <ul>
                 {supportLinks.map((link) => (
                   <li key={link.path}>
-                    <Link to={link.path}>{link.label}</Link>
+                    {link.external ? (
+                      <a href={link.path} target="_blank" rel="noopener noreferrer">{link.label}</a>
+                    ) : (
+                      <Link to={link.path}>{link.label}</Link>
+                    )}
                   </li>
                 ))}
               </ul>

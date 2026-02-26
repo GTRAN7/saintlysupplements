@@ -28,10 +28,19 @@ const Donate = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const amount = customAmount || selectedAmount;
-    alert(`Thank you for your donation of $${amount}! Payment processing would be integrated here.`);
+    const res = await fetch('https://formspree.io/f/mlgwzozb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ amount, type: 'donation' }),
+    });
+    if (res.ok) {
+      alert(`Thank you for your donation of $${amount}! We will be in touch soon.`);
+    } else {
+      alert('Something went wrong. Please try again.');
+    }
   };
 
   return (

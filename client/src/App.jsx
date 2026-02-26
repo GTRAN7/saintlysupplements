@@ -14,6 +14,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import VeteranProgram from './pages/VeteranProgram';
 import VeteranPolicy from './pages/VeteranPolicy';
+import Team from './pages/Team';
 import './styles/global.css';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/veterans" element={<VeteranProgram />} />
           <Route path="/veteran-policy" element={<VeteranPolicy />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
         <Footer />
       </div>
