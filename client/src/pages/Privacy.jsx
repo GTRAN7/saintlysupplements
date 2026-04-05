@@ -116,7 +116,7 @@ const Privacy = () => {
             </p>
             <p>
               <strong>Saintly Supplements</strong><br />
-              Email: privacy@saintlysupplements.org<br />
+              Email: ops.saintlysupplements@gmail.com<br />
               Address: [Organization Address]
             </p>
           </div>

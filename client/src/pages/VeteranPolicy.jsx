@@ -200,7 +200,7 @@ const VeteranPolicy = () => {
             </p>
             <p>
               <strong>Saintly Supplements — Veteran Program Office</strong><br />
-              Email: privacy@saintlysupplements.org<br />
+              Email: ops.saintlysupplements@gmail.com<br />
               Website: saintlysupplements.org/veterans
             </p>
 

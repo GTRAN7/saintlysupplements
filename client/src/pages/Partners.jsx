@@ -5,23 +5,23 @@ const Partners = () => {
   const partners = [
     {
       id: 1,
-      name: 'Walgreens',
-      description: 'Walgreens and its suppliers donate 1% of participating vitamin and supplement retail sales to Vitamin Angels.',
-      website: 'https://www.walgreens.com',
+      name: 'Zen',
+      description: 'Zen and its suppliers donate 1% of participating vitamin and supplement retail sales to Saintly Supplements.',
+      website: 'https://zensupplements.com/',
       color: '#E31837',
     },
     {
       id: 2,
-      name: 'Bayer',
-      description: 'Through its Nutrient Gap Initiative, Bayer helps 4 million pregnant women and their babies each year access prenatal vitamins & minerals.',
-      website: 'https://www.bayer.com',
+      name: 'Coming Soon',
+      description: 'Coming Soon',
+      website: 'Coming Soon',
       color: '#10857F',
     },
     {
       id: 3,
-      name: 'SmartyPants Vitamins',
-      description: 'Since 2011, SmartyPants has helped Vitamin Angels reach over 24 million women and children by making a matching 1-for-1 micronutrient grant for every bottle of vitamins sold.',
-      website: 'https://www.smartypantsvitamins.com',
+      name: 'Coming Soon',
+      description: 'Coming Soon',
+      website: 'Coming Soon',
       color: '#FF6B35',
     },
   ];

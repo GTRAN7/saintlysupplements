@@ -179,7 +179,7 @@ const Team = () => {
       <section className="section">
         <div className="container">
           <div className="section-header">
-            <h2>The Full Team</h2>
+            <h2>The Saints Behind the Mission</h2>
           </div>
           <div className="full-team-photo">
             <img src="/team/full-team.jpeg" alt="Saintly Supplements full team" />
