@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Hero from '../components/home/Hero';
 import WhoWeHelp from '../components/home/WhoWeHelp';
 import Conditions from '../components/home/Conditions';
@@ -34,12 +35,12 @@ const Home = () => {
             </p>
             
             <div className="mission-actions">
-              <a href="/donate" className="btn btn-primary">
+              <Link to="/donate" className="btn btn-primary">
                 Make a Donation
-              </a>
-              <a href="/partners" className="btn btn-outline">
+              </Link>
+              <Link to="/partners" className="btn btn-outline">
                 Become a Partner
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,4 +50,3 @@ const Home = () => {
 };
 
 export default Home;
-
