@@ -3,7 +3,7 @@ import './PageStyles.css';
 
 const Donate = () => {
   const [selectedAmount, setSelectedAmount] = useState(50);
-  const [customAmount, setCustomAmount] = useState('');
+  const [customAmount, setCustomAmount] = useState('50');
 
   const donationAmounts = [25, 50, 100, 250, 500];
 
@@ -17,13 +17,16 @@ const Donate = () => {
 
   const handleAmountSelect = (amount) => {
     setSelectedAmount(amount);
-    setCustomAmount('');
+    setCustomAmount(String(amount));
   };
 
   const handleCustomAmount = (e) => {
     const value = e.target.value;
     setCustomAmount(value);
-    if (value) {
+    const num = Number(value);
+    if (donationAmounts.includes(num)) {
+      setSelectedAmount(num);
+    } else {
       setSelectedAmount(null);
     }
   };
@@ -227,4 +230,3 @@ const Donate = () => {
 };
 
 export default Donate;
-
