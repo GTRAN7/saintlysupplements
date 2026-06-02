@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Supplements.css';
 
 const Supplements = () => {
@@ -81,12 +82,12 @@ const Supplements = () => {
             <h3>Need supplements but can't afford them?</h3>
             <p>We're here to help. Apply for assistance today.</p>
           </div>
-          <a href="/veterans" className="btn btn-primary">
+          <Link to="/veterans" className="btn btn-primary">
             Apply for Help
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
@@ -94,4 +95,3 @@ const Supplements = () => {
 };
 
 export default Supplements;
-
