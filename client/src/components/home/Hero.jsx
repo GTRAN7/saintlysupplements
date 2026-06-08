@@ -35,8 +35,8 @@ const Hero = () => {
           </p>
           
           <div className="hero-cta animate-fade-in-up delay-3">
-            <Link to="/our-work" className="btn btn-primary btn-lg">
-              Learn More
+            <Link to="/veterans" className="btn btn-primary btn-lg">
+            Apply Now
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
