@@ -22,10 +22,10 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
+    { path: '/veterans', label: 'Veterans' },
     { path: '/our-work', label: 'Our Work' },
     { path: '/team', label: 'Our Team' },
     { path: '/blogs', label: 'Blogs' },
-    { path: '/veterans', label: 'Who We Help' },
     { path: '/get-involved', label: 'Get Involved' },
     { path: '/partners', label: 'Corporate Partners' },
     { path: '/faq', label: 'FAQ' },
