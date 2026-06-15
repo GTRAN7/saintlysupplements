@@ -7,7 +7,7 @@ const Partners = () => {
       id: 1,
       name: 'Zen',
       description: 'Zen and its suppliers donate 1% of participating vitamin and supplement retail sales to Saintly Supplements.',
-      website: 'https://zensupplements.com/',
+      website: 'https://zennutrients.com/',
       color: '#E31837',
     },
     {
