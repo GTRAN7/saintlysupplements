@@ -84,7 +84,7 @@ const Hero = () => {
               </svg>
             </div>
             <div className="floating-text">
-              <span>Free Vitamins</span>
+              <span>Complimentary Vitamins</span>
               <small>D & K, Fish Oil</small>
             </div>
           </div>
