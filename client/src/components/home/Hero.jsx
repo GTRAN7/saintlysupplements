@@ -67,8 +67,8 @@ const Hero = () => {
         <div className="hero-image animate-fade-in-up delay-2">
           <div className="hero-image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80" 
-              alt="Volunteers helping community members"
+              src="/Hero.png"
+              alt="Volunteers helping veterans"
               loading="eager"
             />
             <div className="hero-image-overlay"></div>
