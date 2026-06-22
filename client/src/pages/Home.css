@@ -75,6 +75,21 @@
   border-color: white;
 }
 
+.fiscal-sponsor-note {
+  margin-top: var(--space-md);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fiscal-sponsor-note a {
+  color: var(--turquoise);
+  text-decoration: underline;
+}
+
+.fiscal-sponsor-note a:hover {
+  color: white;
+}
+
 @media (max-width: 600px) {
   .mission-text {
     font-size: var(--text-base);
@@ -90,4 +105,3 @@
     max-width: 280px;
   }
 }
-

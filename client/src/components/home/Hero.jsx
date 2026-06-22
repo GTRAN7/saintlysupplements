@@ -44,6 +44,9 @@ const Hero = () => {
             <Link to="/donate" className="btn btn-outline-light btn-lg">
               Donate Now
             </Link>
+            <Link to="/get-involved" className="btn btn-outline-light btn-lg">
+              Become a Corporate Sponsor
+            </Link>
           </div>
           
           <div className="hero-stats animate-fade-in-up delay-4">
@@ -117,4 +120,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

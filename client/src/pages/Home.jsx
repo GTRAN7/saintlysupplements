@@ -41,7 +41,18 @@ const Home = () => {
               <Link to="/partners" className="btn btn-outline">
                 Become a Partner
               </Link>
+              <Link to="/get-involved" className="btn btn-outline">
+                Become a Corporate Sponsor
+              </Link>
             </div>
+
+            <p className="fiscal-sponsor-note">
+              Saintly Supplements is a program of the Indo-American Foundation of Tampa Bay (IAFTB).{' '}
+              <a href="https://iaftb.org" target="_blank" rel="noopener noreferrer">
+                Learn more
+              </a>{' '}
+              about Saintly Supplements' 501(c)(3) organization.
+            </p>
           </div>
         </div>
       </section>

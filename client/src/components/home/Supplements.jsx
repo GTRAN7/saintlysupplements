@@ -31,6 +31,20 @@ const Supplements = () => {
       benefits: ['Customized care', 'Targeted support', 'Quality assured'],
       image: '/products/multivitamin.JPG',
     },
+    {
+      id: 5,
+      name: 'Lutein',
+      description: 'Supports eye health and vision clarity, especially for aging eyes.',
+      benefits: ['Eye health', 'Vision clarity', 'Antioxidant support'],
+      image: '/products/Lutin.png',
+    },
+    {
+      id: 6,
+      name: 'Woundvite',
+      description: 'Advanced wound healing support with essential vitamins and minerals.',
+      benefits: ['Wound healing', 'Tissue repair', 'Recovery support'],
+      image: '/products/Woundvite.png',
+    },
   ];
 
   return (

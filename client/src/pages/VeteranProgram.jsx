@@ -304,6 +304,31 @@ const VeteranProgram = () => {
         </div>
       </section>
 
+      {/* ── FAQs ── */}
+      <section className="section" id="faq">
+        <div className="container">
+          <div className="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Have questions? We've got answers. Click any question to expand.</p>
+          </div>
+          <div className="faq-accordion">
+            {faqs.map((faq, index) => (
+              <details key={index} className="faq-item">
+                <summary className="faq-question">
+                  <span>{faq.question}</span>
+                  <svg className="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </summary>
+                <div className="faq-answer">
+                  <p>{faq.answer}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Available Supplements ── */}
       <section className="section" id="supplements">
         <div className="container">
@@ -325,8 +350,6 @@ const VeteranProgram = () => {
           </div>
         </div>
       </section>
-
-      
 
       {/* ── CTA ── */}
       <section className="section" id="apply">
