@@ -184,6 +184,13 @@ const Team = () => {
           <div className="full-team-photo">
             <img src="/team/full-team.jpeg" alt="Saintly Supplements full team" />
           </div>
+          <p style={{ textAlign: 'center', marginTop: '1.5rem', fontSize: 'var(--text-sm)', color: 'var(--text-muted)' }}>
+            Saintly Supplements is a program of the Indo-American Foundation of Tampa Bay (IAFTB).{' '}
+            <a href="https://iaftb.org" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--turquoise)', textDecoration: 'underline' }}>
+              Learn more
+            </a>{' '}
+            about Saintly Supplements' 501(c)(3) organization.
+          </p>
         </div>
       </section>
 

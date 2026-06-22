@@ -129,16 +129,31 @@
 
 .footer-bottom-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.footer-bottom p {
+.footer-bottom-content > p {
   font-size: var(--text-sm);
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
+}
+
+.footer-fiscal-note {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.footer-fiscal-note a {
+  color: var(--turquoise);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.footer-fiscal-note a:hover {
+  color: white;
 }
 
 .footer-legal {
@@ -202,7 +217,6 @@
   }
 
   .footer-bottom-content {
-    flex-direction: column;
     text-align: center;
   }
 
@@ -210,4 +224,3 @@
     gap: 1.5rem;
   }
 }
-

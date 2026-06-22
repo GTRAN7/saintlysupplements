@@ -126,6 +126,13 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-content">
             <p>&copy; {currentYear} Saintly Supplements. All rights reserved.</p>
+            <p className="footer-fiscal-note">
+              Saintly Supplements is a program of the{' '}
+              <a href="https://iaftb.org" target="_blank" rel="noopener noreferrer">
+                Indo-American Foundation of Tampa Bay (IAFTB)
+              </a>
+              , a 501(c)(3) nonprofit organization.
+            </p>
             <div className="footer-legal">
               <Link to="/privacy">Privacy Policy</Link>
               <Link to="/terms">Terms of Service</Link>
@@ -138,4 +145,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
