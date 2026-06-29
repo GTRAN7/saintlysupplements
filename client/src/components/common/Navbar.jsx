@@ -27,7 +27,7 @@ const Navbar = () => {
     { path: '/team', label: 'Our Team' },
     { path: '/blogs', label: 'Blogs' },
     { path: '/get-involved', label: 'Get Involved' },
-    { path: '/partners', label: 'Corporate Partners' },
+    { path: '/partners', label: 'Corporate Sponsor' },
     { path: '/faq', label: 'FAQ' },
     { path: 'https://saintly-supplements.myshopify.com/', label: 'Shop', external: true },
   ];

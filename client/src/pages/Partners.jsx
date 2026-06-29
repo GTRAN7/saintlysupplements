@@ -9,6 +9,7 @@ const Partners = () => {
       description: 'Zen and its suppliers donate 1% of participating vitamin and supplement retail sales to Saintly Supplements.',
       website: 'https://zennutrients.com/',
       color: '#E31837',
+      logo: 'https://zennutrients.com/cdn/shop/files/Zen_Logo_Botte_Icon_to_the_left_300x.png?v=1646389327',
     },
     {
       id: 2,
@@ -47,12 +48,18 @@ const Partners = () => {
               </svg>
               Partnership Opportunities
             </span>
-            <h1>Corporate Partners</h1>
+            <h1>Corporate Sponsor</h1>
             <p>
-              Together with our amazing corporate partners, we're making a real difference 
+              Together with our amazing corporate sponsors, we're making a real difference 
               in the lives of those who need it most. Their generosity helps us provide 
               essential supplements to thousands of people every year.
             </p>
+
+            {/* Sponsor Type Buttons */}
+            <div className="sponsor-type-buttons">
+              <button className="btn-sponsor-type">Donating Product</button>
+              <button className="btn-sponsor-type">Donating Money</button>
+            </div>
           </div>
         </div>
         
@@ -70,7 +77,7 @@ const Partners = () => {
       <section className="partners-section section">
         <div className="container">
           <div className="partners-intro">
-            <h2>Our Valued Partners</h2>
+            <h2>Our Valued Sponsors</h2>
             <p>
               These organizations share our vision of making health accessible to everyone, 
               regardless of their financial situation.
@@ -85,10 +92,18 @@ const Partners = () => {
                 style={{ '--partner-color': partner.color, '--delay': `${index * 0.15}s` }}
               >
                 <div className="partner-card-header">
-                  <div className="partner-logo-placeholder">
-                    <span className="partner-initial">{partner.name.charAt(0)}</span>
-                    <span className="partner-name-text">{partner.name}</span>
-                  </div>
+                  {partner.logo ? (
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="partner-logo-img"
+                    />
+                  ) : (
+                    <div className="partner-logo-placeholder">
+                      <span className="partner-initial">{partner.name.charAt(0)}</span>
+                      <span className="partner-name-text">{partner.name}</span>
+                    </div>
+                  )}
                 </div>
                 
                 <div className="partner-card-body">
@@ -119,13 +134,13 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* Become a Partner CTA */}
+      {/* Become a Sponsor CTA */}
       <section className="become-partner section">
         <div className="container">
           <div className="become-partner-card">
             <div className="become-partner-content">
               <span className="partner-badge">Join Us</span>
-              <h2>Become a Corporate Partner</h2>
+              <h2>Become a Corporate Sponsor</h2>
               <p>
                 Partner with Saintly Supplements and help us expand our reach. 
                 Together, we can make high-quality supplements accessible to more 
@@ -171,7 +186,7 @@ const Partners = () => {
               <div className="partner-visual-circle">
                 <div className="circle-content">
                   <span className="circle-number">3+</span>
-                  <span className="circle-label">Active Partners</span>
+                  <span className="circle-label">Active Sponsors</span>
                 </div>
               </div>
               <div className="visual-decorations">
@@ -189,4 +204,3 @@ const Partners = () => {
 };
 
 export default Partners;
-

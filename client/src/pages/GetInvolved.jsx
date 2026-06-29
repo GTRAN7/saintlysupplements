@@ -229,6 +229,7 @@ const GetInvolved = () => {
                   <option value="events">Event Support</option>
                   <option value="admin">Administrative</option>
                   <option value="recipient">Apply for Supplements</option>
+                  <option value="sponsor">Becoming a Sponsor</option>
                 </select>
               </div>
               
@@ -256,4 +257,3 @@ const GetInvolved = () => {
 };
 
 export default GetInvolved;
-
