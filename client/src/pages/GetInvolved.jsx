@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './PageStyles.css';
 
 const GetInvolved = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,6 +11,16 @@ const GetInvolved = () => {
     interest: 'volunteer',
     message: '',
   });
+
+  useEffect(() => {
+    if (location.hash === '#form') {
+      const el = document.getElementById('form');
+      if (el) {
+        // slight delay lets the page finish rendering before we scroll
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+      }
+    }
+  }, [location]);
 
   const handleChange = (e) => {
     setFormData({
@@ -138,7 +150,7 @@ const GetInvolved = () => {
         </div>
       </section>
 
-      <section className="section bg-warm">
+      <section className="section bg-warm" id="form">
         <div className="container">
           <div className="form-section">
             <div className="form-info">

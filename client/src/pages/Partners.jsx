@@ -57,8 +57,12 @@ const Partners = () => {
 
             {/* Sponsor Type Buttons */}
             <div className="sponsor-type-buttons">
-              <button className="btn-sponsor-type">Donating Product</button>
-              <button className="btn-sponsor-type">Donating Money</button>
+              <Link to="/get-involved#form" className="btn-sponsor-type">
+                Donating Product
+              </Link>
+              <Link to="/donate" className="btn-sponsor-type">
+                Donating Money
+              </Link>
             </div>
           </div>
         </div>
